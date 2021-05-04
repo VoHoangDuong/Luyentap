@@ -23,7 +23,7 @@ public class CustomerService {
 
     public void printData(){
         for (Map.Entry<String, Customer> entry : CustomerDB.customerList.entrySet()){
-            System.out.println(entry.getKey()+"-"+entry.getValue().toString());
+            System.out.println(entry.getKey()+" | "+entry.getValue().toString());
         }
     }
 

@@ -97,22 +97,22 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Information: " +
-                "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phone number='" + phoneNumber + '\'' +
-                ", email='" + email + '\'' +
-                ", gender='" + gender + '\'' +
-                ", order number=" + orderNumber;
+        return "Thông tin khách hàng: " + "| " +
+                "Tên: " + name +
+                " | Địa chỉ: " + address +
+                " | Số điện thoại: " + phoneNumber +
+                " | Email: " + email +
+                " | Giới tính: " + gender +
+                " | Số đơn hàng: " + orderNumber + "|";
     }
 
     public String toStringMid() {
-        return "Information:" +
-                "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phone number='" + phoneNumber + '\'' +
-                ", email='" + email + '\'' +
-                ", gender='" + gender + '\'';
+        return "Thông tin khách hàng: " + "| "+
+                "Tên: " + name +
+                " | Địa chỉ: " + address +
+                " | Số điện thoại: " + phoneNumber +
+                " | Email: " + email +
+                " | Giới tính: " + gender + "|";
     }
 
     public String toStringCSV(){
