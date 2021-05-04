@@ -123,6 +123,6 @@ public class Student2 {
 
     public String toStringScore(){
         return "| " +name + " | " + "Điểm hệ số 1: " + diem11 + " | " + "Điểm hệ số 1: " + diem12 + " | " +
-                "Điểm hệ số 2: " + diem2 + " | " + "Điểm hệ số 3: " + diem3 + " | " + "Điểm TB: " + String.format("%.2f",diemTB)+ "|";
+                "Điểm hệ số 2: " + diem2 + " | " + "Điểm hệ số 3: " + diem3 + " | " + "Điểm TB: " + String.format("%.2f",diemTB)+ " |";
     }
 }
