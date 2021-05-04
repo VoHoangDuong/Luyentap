@@ -149,6 +149,7 @@ public class MainStudent2 {
             System.out.println("Không tìm thấy");
         }else {
             System.out.println(s2.toString());
+            System.out.println("Thông tin cần sửa:");
             System.out.println("Nhập tên:");
             String name = scanner.nextLine();
 
@@ -199,7 +200,7 @@ public class MainStudent2 {
         Student2Service student2Service = new Student2Service();
         Scanner scanner = new Scanner(System.in);
         for (Map.Entry<Integer,Student2> entry : StudentDB2.student2List.entrySet()){
-            System.out.println("Nhập điểm hệ số 1 lần 1:" + student2Service.find(entry.getKey()).getName());
+            System.out.println("Nhập điểm hệ số 1 lần 1 :" + student2Service.find(entry.getKey()).getName());
             double score1 = scanner.nextDouble();
             entry.getValue().setDiem11(score1);
         }
@@ -246,7 +247,7 @@ public class MainStudent2 {
         Student2Service student2Service = new Student2Service();
         Scanner scanner = new Scanner(System.in);
         for (Map.Entry<Integer,Student2> entry : StudentDB2.student2List.entrySet()){
-            System.out.println("Nhập điểm hệ số 1 lần 2:" + student2Service.find(entry.getKey()).getName());
+            System.out.println("Nhập điểm hệ số 1 lần 2: " + student2Service.find(entry.getKey()).getName());
             double score2 = scanner.nextDouble();
             entry.getValue().setDiem12(score2);
         }
@@ -257,7 +258,7 @@ public class MainStudent2 {
         Student2Service student2Service = new Student2Service();
         Scanner scanner = new Scanner(System.in);
         for (Map.Entry<Integer,Student2> entry : StudentDB2.student2List.entrySet()){
-            System.out.println("Nhập điểm hệ số 2:" + student2Service.find(entry.getKey()).getName());
+            System.out.println("Nhập điểm hệ số 2: " + student2Service.find(entry.getKey()).getName());
             double score3 = scanner.nextDouble();
             entry.getValue().setDiem2(score3);
         }
@@ -268,7 +269,7 @@ public class MainStudent2 {
         Student2Service student2Service = new Student2Service();
         Scanner scanner = new Scanner(System.in);
         for (Map.Entry<Integer,Student2> entry : StudentDB2.student2List.entrySet()){
-            System.out.println("Nhập điểm hệ số 3 : " + student2Service.find(entry.getKey()).getName());
+            System.out.println("Nhập điểm hệ số 3: " + student2Service.find(entry.getKey()).getName());
             double score4 = scanner.nextDouble();
             entry.getValue().setDiem3(score4);
         }

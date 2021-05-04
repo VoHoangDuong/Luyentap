@@ -63,6 +63,7 @@ public class MainCustomer {
         System.out.println("Bấm 4. Để in toàn bộ danh sách khách hàng");
         System.out.println("Bấm 5. Để tăng số đơn hàng cho khách");
         System.out.println("Bấm 0. Để thoát");
+        System.out.println("---------------------");
     }
 
     public static void addCustomer() throws Exception {

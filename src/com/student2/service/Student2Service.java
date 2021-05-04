@@ -29,7 +29,7 @@ public class Student2Service {
 
     public void print(){
         for (Map.Entry<Integer,Student2> entry : StudentDB2.student2List.entrySet()){
-            System.out.println(entry.getKey()+"-"+entry.getValue().toString());
+            System.out.println(entry.getKey()+" | "+entry.getValue().toString());
         }
     }
 

@@ -110,12 +110,11 @@ public class Student2 {
     }
     @Override
     public String toString() {
-        return "Student2{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                '}';
+        return "Thông tin:" +
+                " | MSSV: " + id +
+                " | Tên: " + name +
+                " | Địa chỉ: " + address +
+                " | Số điện thoại: " + phoneNumber + "|";
     }
 
     public String toStringCSV(){
@@ -123,6 +122,7 @@ public class Student2 {
     }
 
     public String toStringScore(){
-        return name+": "+"Điểm hệ số 1: " + diem11 + ", " + "Điểm hệ số 1: " + diem12 + ", " + "Điểm hệ số 2: " + diem2 + ", " + "Điểm hệ số 3: " + diem3 + ", " + "Điểm TB: " + diemTB;
+        return "| " +name + " | " + "Điểm hệ số 1: " + diem11 + " | " + "Điểm hệ số 1: " + diem12 + " | " +
+                "Điểm hệ số 2: " + diem2 + " | " + "Điểm hệ số 3: " + diem3 + " | " + "Điểm TB: " + String.format("%.2f",diemTB)+ "|";
     }
 }
