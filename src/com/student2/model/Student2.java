@@ -110,11 +110,7 @@ public class Student2 {
     }
     @Override
     public String toString() {
-        return "Thông tin:" +
-                " | MSSV: " + id +
-                " | Tên: " + name +
-                " | Địa chỉ: " + address +
-                " | Số điện thoại: " + phoneNumber + "|";
+        return "Thông tin:" + " | MSSV: " + String.format("%-2s|",id) + " Tên: " + String.format("%-6s|",name) + " Địa chỉ: " + String.format("%-11s|",address) + " Số điện thoại: " + String.format("%-11s|",phoneNumber);
     }
 
     public String toStringCSV(){
