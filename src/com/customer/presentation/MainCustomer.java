@@ -45,6 +45,9 @@ public class MainCustomer {
                         e.printStackTrace();
                     }
                     break;
+                case 6:
+                    sortCustomerList();
+                    break;
                 case 0:
                     exit();
                 default:
@@ -60,8 +63,9 @@ public class MainCustomer {
         System.out.println("Bấm 1. Để nhập khách hàng");
         System.out.println("Bấm 2. Để tìm kiếm khách hàng");
         System.out.println("Bấm 3. Để in thông tin khách hàng");
-        System.out.println("Bấm 4. Để in toàn bộ danh sách khách hàng");
+        System.out.println("Bấm 4. Để in toàn bộ danh sách khách hàng theo tên");
         System.out.println("Bấm 5. Để tăng số đơn hàng cho khách");
+        System.out.println("Bấm 6. Để sắp xếp danh sách");
         System.out.println("Bấm 0. Để thoát");
         System.out.println("---------------------");
     }
@@ -150,5 +154,11 @@ public class MainCustomer {
     public static void exit(){
         System.out.println("Đã thoát hệ thống quản lý khách hàng.");
         System.exit(0);
+    }
+
+    public static void sortCustomerList(){
+        System.out.println("Danh sách sau khi sắp xếp:");
+        CustomerService customerService = new CustomerService();
+        customerService.sortCustomer();
     }
 }

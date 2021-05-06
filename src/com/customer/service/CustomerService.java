@@ -34,4 +34,8 @@ public class CustomerService {
     public int size(){
         return CustomerDB.customerList.size();
     }
+
+    public void sortCustomer(){
+        customerDB.sort();
+    }
 }

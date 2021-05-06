@@ -3,8 +3,7 @@ package com.customer.dal;
 import com.customer.model.Customer;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class CustomerDB {
     public static Map<String, Customer> customerList;
@@ -52,6 +51,20 @@ public class CustomerDB {
             e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public void sort(){
+        List<Map.Entry<String,Customer>> list = new ArrayList<Map.Entry<String, Customer>>();
+        list.addAll(customerList.entrySet());
+        Collections.sort(list, new Comparator<Map.Entry<String, Customer>>() {
+            @Override
+            public int compare(Map.Entry<String, Customer> o1, Map.Entry<String, Customer> o2) {
+                return o1.getValue().getName().compareTo(o2.getValue().getName());
+            }
+        });
+        for(int i=0;i<list.size();i++){
+            System.out.println(list.get(i).getValue().toString());
         }
     }
 }

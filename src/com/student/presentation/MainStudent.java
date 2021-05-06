@@ -86,7 +86,6 @@ public class MainStudent {
         sc.nextLine();
         StudentService studentService = new StudentService();
         Student student = studentService.find(id);
-//        System.out.println(student);
         if (student == null){
             System.out.println("Not found");
         } else {
